@@ -1,0 +1,6 @@
+INSERT INTO public.pedido(
+	idcliente, dataentrega, valorservico, valorsinal, altura, largura, frase, idcorplaca, idcorfrase)
+	VALUES 
+	 (1, '2020-05-03', 13, 9, 4, 12, 'texto 1', 1, 4)
+	,(2, '2020-04-10', 54, 40, 5, 13, 'texto 2', 2, 5)
+	;

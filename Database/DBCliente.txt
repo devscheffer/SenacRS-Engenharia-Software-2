@@ -1,0 +1,6 @@
+INSERT INTO public.cliente(
+	nome, telefone)
+	VALUES 
+	 ('joao', '51923433212')
+	,('maria', '51923433212')
+	;

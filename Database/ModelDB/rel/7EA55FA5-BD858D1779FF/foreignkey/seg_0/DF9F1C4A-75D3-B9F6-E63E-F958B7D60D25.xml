@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DF9F1C4A-75D3-B9F6-E63E-F958B7D60D25" containerWithKeyObject="D1AB4176-9D65-A809-13F0-6B34CCF703CE" localFKIndex="2F541253-F5D0-020E-5C27-52EA9DC5C064" name="Pedido_CorFrase_FK">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:14:55 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<referredTableLongName>CorFrase</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>83A4E04E-8360-D49B-2D79-26F31EFFC892</referredTableID>
+<keyObject>51CF822B-9D82-A784-505C-3F190DD6B7BA</keyObject>
+<referredKeyID>51CF822B-9D82-A784-505C-3F190DD6B7BA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>IDCorFrase</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

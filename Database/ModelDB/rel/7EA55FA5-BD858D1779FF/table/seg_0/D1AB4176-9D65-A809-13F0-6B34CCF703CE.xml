@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D1AB4176-9D65-A809-13F0-6B34CCF703CE" name="Pedido">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 12:46:45 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPedido" id="9A8E6C36-976D-EBB6-8DA2-8E4F28F001A2">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:06:34 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDCliente" id="B265336D-D0F2-3783-C9B4-208D4CCF0C27">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:14:06 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="64CE978E-F514-D39C-D2F3-F0DABB86FC65" referredColumn="DCA02502-E736-521A-32B4-88624965E652"/>
+</associations>
+</Column>
+<Column name="DataEntrega" id="852D77B0-2D55-7A5B-41C1-2676EA5DCC02">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:06:34 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ValorServico" id="6B2A688E-998A-97FF-BDCD-E4AA931A234A">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:06:34 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,20,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ValorSinal" id="DE6FEF53-9628-8515-4021-A6DACF30DAAE">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:06:34 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,20,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Altura" id="A8538B64-4370-2C37-1BE1-61798102AB8A">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:06:34 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,20,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Largura" id="76AACBE8-C00D-5149-1B43-CEF180A402E1">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:06:34 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,20,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Frase" id="4D38F331-0C03-DD4B-57A8-55E1452EF6CD">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:06:34 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDCorPlaca" id="2FA3162A-EDFC-25E8-9F86-C6B39B5A308F">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:06:34 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1C66B24-BEE2-1078-01C8-798A9539EF70" referredColumn="36F02B07-9F67-CBEB-73A9-FD4B3CD068E4"/>
+</associations>
+</Column>
+<Column name="IDCorFrase" id="BDE68ABB-D37F-42DD-C7A4-9708C2A3F40F">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:06:34 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF9F1C4A-75D3-B9F6-E63E-F958B7D60D25" referredColumn="99A529A3-AF3A-C70D-6355-BAC283352574"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21B086A9-CACF-8E7B-9C18-6590990C851B" name="Pedido_PK">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:14:06 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A8E6C36-976D-EBB6-8DA2-8E4F28F001A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="102E5698-4EAA-FBF9-147C-96DAB5801B83" name="Pedido_Cliente_FK">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:14:06 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B265336D-D0F2-3783-C9B4-208D4CCF0C27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F541253-F5D0-020E-5C27-52EA9DC5C064" name="Pedido_CorFrase_FK">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:14:55 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDE68ABB-D37F-42DD-C7A4-9708C2A3F40F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A3BC211-6D56-C92A-939B-C274757963A4" name="Pedido_CorPlaca_FK">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 13:14:55 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FA3162A-EDFC-25E8-9F86-C6B39B5A308F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

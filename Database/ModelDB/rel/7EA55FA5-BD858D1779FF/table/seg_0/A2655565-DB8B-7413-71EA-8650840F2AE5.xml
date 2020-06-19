@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A2655565-DB8B-7413-71EA-8650840F2AE5" name="Cliente">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 12:30:07 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDCliente" id="DCA02502-E736-521A-32B4-88624965E652">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 12:45:33 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="0B526EA9-513B-132F-6181-FAED741E2225">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 12:45:33 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefone" id="0712E896-F0C0-630B-6D23-87ED4FE380D2">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 12:45:33 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="035F69F7-2CE5-B3BC-9953-62D159B32367" name="Cliente_PK">
+<createdBy>Scheffer</createdBy>
+<createdTime>2020-06-19 12:45:33 UTC</createdTime>
+<ownerDesignName>ModelDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCA02502-E736-521A-32B4-88624965E652"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

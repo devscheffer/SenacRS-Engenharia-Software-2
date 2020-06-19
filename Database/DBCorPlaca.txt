@@ -1,0 +1,6 @@
+INSERT INTO public.corplaca(
+	desccor)
+	VALUES 
+	('branca')
+	,('cinza')
+	;

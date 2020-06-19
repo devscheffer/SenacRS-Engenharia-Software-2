@@ -1,0 +1,48 @@
+CREATE TABLE cliente (
+    idcliente SERIAL NOT NULL,
+    nome       VARCHAR(200),
+    telefone   VARCHAR(11)
+);
+
+ALTER TABLE cliente ADD CONSTRAINT cliente_pk PRIMARY KEY ( idcliente );
+
+CREATE TABLE corfrase (
+    idcorfrase SERIAL NOT NULL ,
+    desccor     VARCHAR(50)
+);
+
+ALTER TABLE corfrase ADD CONSTRAINT corfrase_pk PRIMARY KEY ( idcorfrase );
+
+CREATE TABLE corplaca (
+    idcorplaca SERIAL NOT NULL,
+    desccor     VARCHAR(50)
+);
+
+ALTER TABLE corplaca ADD CONSTRAINT corplaca_pk PRIMARY KEY ( idcorplaca );
+
+CREATE TABLE pedido (
+    idpedido SERIAL NOT NULL,
+    idcliente     INTEGER NOT NULL,
+    dataentrega   DATE,
+    valorservico  NUMERIC(20, 2),
+    valorsinal    NUMERIC(20, 2),
+    altura        NUMERIC(20, 2),
+    largura       NUMERIC(20, 2),
+    frase         TEXT,
+    idcorplaca    INTEGER NOT NULL,
+    idcorfrase    INTEGER NOT NULL
+);
+
+ALTER TABLE pedido ADD CONSTRAINT pedido_pk PRIMARY KEY ( idpedido );
+
+ALTER TABLE pedido
+    ADD CONSTRAINT pedido_cliente_fk FOREIGN KEY ( idcliente )
+        REFERENCES cliente ( idcliente );
+
+ALTER TABLE pedido
+    ADD CONSTRAINT pedido_corfrase_fk FOREIGN KEY ( idcorfrase )
+        REFERENCES corfrase ( idcorfrase );
+
+ALTER TABLE pedido
+    ADD CONSTRAINT pedido_corplaca_fk FOREIGN KEY ( idcorplaca )
+        REFERENCES corplaca ( idcorplaca );

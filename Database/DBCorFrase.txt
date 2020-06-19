@@ -1,0 +1,9 @@
+INSERT INTO public.corfrase(
+	desccor)
+	VALUES 
+	('azul')
+	,('vermelho')
+	,('amarelo')
+	,('preto')
+	,('verde')
+	;
