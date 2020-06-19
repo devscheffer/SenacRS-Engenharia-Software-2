@@ -5,6 +5,7 @@ use Psr\Http\message\ServerRequestInterface as Request;
 
 
 include_once(__DIR__.'\apigroup\pedido\CTRLPedido.php');
+include_once(__DIR__.'\apigroup\cliente\CTRLCliente.php');
 
 
 require __DIR__ . '/vendor/autoload.php';
@@ -39,9 +40,18 @@ $app->group('/api/pedido'
 , function($app){
     $app->get('', 'pedidoController:list');
     $app->get('/{idpedido}', 'pedidoController:SearchByidpedido');    
-    $app->put('/{idpedido}', 'pedidoController:update');
     $app->post('', 'pedidoController:insert');
+    $app->put('/{idpedido}', 'pedidoController:update');
     $app->delete('/{idpedido}', 'pedidoController:delete');
+});
+
+$app->group('/api/cliente'
+, function($app){
+    $app->get('', 'clienteController:list');
+    $app->get('/{idcliente}', 'clienteController:SearchByidcliente');    
+    $app->post('', 'clienteController:insert');
+    $app->put('/{idcliente}', 'clienteController:update');
+    $app->delete('/{idcliente}', 'clienteController:delete');
 });
 
 $app->run();
