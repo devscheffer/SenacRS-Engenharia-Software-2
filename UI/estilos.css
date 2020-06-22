@@ -1,0 +1,69 @@
+.nome-departamento{
+    font-size: 1em;
+}
+
+.navbar-gradiente{
+    background: linear-gradient(to right, #BE4E6A, #943E7D);
+}
+
+.btn-pink{
+    background-color: #BE4E6A;
+}
+
+
+.btn-icon{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+}
+
+.btn-outline-pink{
+    color: #BE4E6A;
+    border-color: #BE4E6A;
+}
+
+.btn-outline-pink:hover{
+    color: white;
+    background-color: #BE4E6A;
+    border-color: #BE4E6A;
+}
+
+.input-pink{
+    border-color: #BE4E6A;
+    color: #BE4E6A;
+}
+
+.underline-pink{
+    text-decoration: underline #BE4E6A;
+}
+
+.icone-sucesso{
+    font-size: 15em;
+    color: #8BCBAB;
+}
+
+.dt-group{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+dt,dd{
+    display: inline;
+}
+
+hr{
+    border-color: #BE4E6A;
+    height: 3px;
+    border-width: 2px;
+}
+
+.w-35{
+    width: 35%;
+}
+
+.legend{
+    font-size: 1.5rem;
+    font-weight: 400;
+}

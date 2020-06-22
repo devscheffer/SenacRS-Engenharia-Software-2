@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Pedido</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="navbar navbar-gradiente">
+        <div class="container justify-content-between align-items-baseline">
+            <h1><a class="navbar-brand text-white" href="index.html">Super Placas</a></h1>
+            <h3 class="text-white nome-departamento">DEPARTAMENTO ADMINISTRATIVO</h3>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <h4>Novo Pedido</h4>
+        <div class="w-50 mx-auto mt-5">
+            <h5>Selecione o Cliente:</h5>
+            <form action="cadastrar-placa.php" class="mt-5" method="POST">
+                <div class="form-group row align-items-baseline">
+                    <label for="cliente" class="col-2">Cliente:</label>
+                    <select type="text" id="selectCliente" name="idcliente" class="form-control col-10 input-pink" required>
+                        <option value="" selected disabled>Selecione...</option>
+                    </select>
+                    <span class="col-10 offset-2 pl-0 mt-2">Não encontrou? <a href="cadastrar-cliente.html" class="text-pink">Cadastre</a></span>
+                </div>
+
+                <input type="submit" class="btn btn-pink text-white mt-5 d-block w-25 p-2 mx-auto" value="Selecionar">
+            </form>
+
+        </div>
+    </main>
+
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="js/variaveis.js"></script>
+    <script src="js/select-clientes-carregar.js"></script>
+</body>
+</html>

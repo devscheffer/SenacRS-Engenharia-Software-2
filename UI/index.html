@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Placas</title>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/139864ae00.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <header class="navbar navbar-gradiente">
+        <div class="container justify-content-between align-items-baseline">
+            <h1><a class="navbar-brand text-white" href="index.html">Super Placas</a></h1>
+            <h3 class="text-white nome-departamento">DEPARTAMENTO ADMINISTRATIVO</h3>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <h4>Bem Vindo, Sr. João</h4>
+        <h5>Selecione a opção desejada:</h5>
+
+        <ul class="row list-unstyled my-5 mx-auto w-75 align-items-stretch">
+            <li class="col-6 my-3">
+                <a href="cadastrar-cliente.html" class="btn-pink row p-0 text-white py-5 px-3 mx-3 h-100 align-items-center">
+                    <div class="col-6">
+                        <i class="fas fa-user-check text-white btn-icon"></i>
+                    </div>
+                    <h5 class="col-6">Cadastrar Cliente</h5>
+                </a>
+            </li>
+
+            <li class="col-6 my-3">
+                <a href="orcamento-form.html" class="btn-pink row p-0 text-white py-5 px-3 mx-3 h-100 align-items-center">
+                    <div class="col-5">
+                        <i class="fas fa-money-bill-wave-alt btn-icon"></i>
+                    </div>
+                    <h5 class="col-7 align-middle">Orçamento</h5>
+                </a>
+            </li>
+
+            <li class="col-6 my-3">
+                <a href="cadastrar-placa-selecionar-cliente.html" class="btn-pink row p-0 text-white py-5 px-3 mx-3 h-100 align-items-center">
+                    <div class="col-6">
+                        <i class="fas fa-sign btn-icon"></i>
+                    </div>
+                    <h5 class="col-6">Cadastrar Pedido</h5>
+                </a>
+            </li>
+
+            <li class="col-6 my-3">
+                <a href="emitir-recibo-selecionar-pedido.html" class="btn-pink row p-0 text-white py-5 px-3 mx-3 h-100 align-items-center">
+                    <div class="col-5">
+                        <i class="fas fa-receipt btn-icon"></i>
+                    </div>
+                    <h5 class="col-7">Emitir Recibo</h5>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+</body>
+</html>
