@@ -72,5 +72,14 @@ class PedidoController {
 
 		return $response->withJson($pedido);
 	}
+
+	public function ordersByDate($request, $response, $args){
+		$date = $args['date'];
+
+		$dao = new PedidoDAO;
+		$pedidos = $dao->ordersByDate($date);
+
+		return $response->withJson($pedidos);
+	}
 }
 ?>

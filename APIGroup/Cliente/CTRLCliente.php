@@ -14,10 +14,9 @@ class clienteController {
 	public function insert($request, $response, $args) {
 		$data = $request->getParsedBody();
 		$cliente = new cliente(
-			$data['idcliente']
-			,$data['nome']
-			,$data['telefone']
-
+			0,
+			$data['nome'],
+			$data['telefone']
 		);
 
 		$dao = new clienteDAO;

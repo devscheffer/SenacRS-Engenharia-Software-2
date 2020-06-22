@@ -74,6 +74,7 @@
 			$comando = $pdo->prepare($query);
 			$comando->execute();
 			$clientes=array();	
+			$arrcliente = [];
 			while($row = $comando->fetch(PDO::FETCH_OBJ)){
 
 				$arrcliente[] = new cliente(

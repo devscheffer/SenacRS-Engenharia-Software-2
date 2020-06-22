@@ -108,6 +108,7 @@
 			$comando = $pdo->prepare($query);
 			$comando->execute();
 			$pedidos=array();	
+			$arrpedido = [];
 			while($row = $comando->fetch(PDO::FETCH_OBJ)){
 
 				$arrpedido[] = new pedido(
@@ -151,5 +152,29 @@
 				,$result->idcorplaca
 				,$result->idcorfrase
 			);           
+		}
+		
+		public function ordersByDate($date){
+			$query = "SELECT * FROM pedido WHERE dataentrega = :dataentrega";
+			$pdo = PDOFactory::getConexao();
+			$comando = $pdo->prepare($query);
+			$comando->bindParam("dataentrega", $date);
+			$comando->execute();
+			$result = [];
+			while ($row = $comando->fetch(PDO::FETCH_OBJ)){
+				$result[] = new Pedido(
+					$row->idpedido
+					,$row->idcliente
+					,$row->dataentrega
+					,$row->valorservico
+					,$row->valorsinal
+					,$row->altura
+					,$row->largura
+					,$row->frase
+					,$row->idcorplaca
+					,$row->idcorfrase
+				);
+			}
+			return $result;
 		}
 	}
