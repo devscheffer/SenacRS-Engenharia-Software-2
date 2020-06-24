@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novo Pedido</title>
+    <title>Orcamento</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
     <!-- Estilos -->
@@ -18,7 +18,7 @@
     </header>
 
     <main class="container text-center mt-5">
-        <h4 class="underline-pink mb-4">Resumo do Pedido</h4>
+        <h4 class="underline-pink mb-4">Resumo do Orçamento</h4>
 
         <dl>
             <div class="dt-group">
@@ -60,9 +60,8 @@
 
             <hr class="w-35">
         </dl>
-
-        <form action="cadastrar-placa-sucesso.php" method="POST" id="form-placa">
-            <input name="idcliente" type="hidden" value='<?php echo $_POST['idcliente']; ?>'>
+        <form id="form-placa" action="#">
+            <input name="idcliente" type="hidden" value='<?php echo $_POST['idcliente'];?>'>
             <input name="altura" type="hidden" value='<?php echo $_POST['altura']; ?>'>
             <input name="largura" type="hidden" value='<?php echo $_POST['largura']; ?>'>
             <input name="frase" type="hidden" value='<?php echo $_POST['frase']; ?>'>
@@ -70,19 +69,10 @@
             <input name="idcorfrase" type="hidden" value='<?php echo $_POST['idcorfrase']; ?>'>
             <input name="valorservico" type="hidden" value="">
             <input name="idpedido" type="hidden" value="">
-
-            <div class="form-group text-left mx-auto row w-35">
-                <label for="sinal" class="font-weight-bold col-7">Valor do Sinal: </label>
-                <input type="number" id="sinal" name="valorsinal" min="0" step="0.01" class=" form-control input-pink col-5">
-            </div>
-
-            <div class="form-group text-left mx-auto row w-35">
-                <label for="entrega" class="font-weight-bold col-7">Data de Entrega: </label>
-                <input type="date" name="dataentrega" id="entrega" class="form-control input-pink col-5">
-            </div>
-
-            <input type="submit" value="Finalizar" class="d-block btn btn-pink text-white mx-auto w-25 py-2 mt-5">
         </form>
+
+        <a class="btn btn-pink text-white mx-2" href="cadastrar-placa-selecionar-cliente.html">Cadastrar</a>
+        <a href="index.html" class="btn btn-outline-pink mx-2 px-4">Voltar</a>
     </main>
 
     <script src="vendor/js/jquery.min.js"></script>

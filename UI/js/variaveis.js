@@ -13,5 +13,19 @@ coresFrase = {
 	"5": "Verde"
 }
 
+classesCorFrase = {
+	"1": "texto-azul",
+	"2": "texto-vermelho",
+	"3": "texto-amarelo",
+	"4": "texto-preto",
+	"5": "texto-verde"
+}
+
+classesCorPlaca = {
+	"1": "placa-branca",
+	"2": "placa-cinza"
+}
+
 precoPorArea = 147.30;
 precoPorLetra = 0.32;
+

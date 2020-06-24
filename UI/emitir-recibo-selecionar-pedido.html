@@ -21,10 +21,10 @@
         <h4>Recibo</h4>
         <div class="w-50 mx-auto mt-5">
             <h5>Selecione o Pedido:</h5>
-            <form action="emitir-recibo.html" class="mt-5" method="POST">
+            <form action="emitir-recibo.php" class="mt-5" method="GET">
                 <div class="form-group row align-items-baseline">
                     <label for="cliente" class="col-2">Pedido:</label>
-                    <select type="text" id="nome" name="nome" class="form-control col-10 input-pink">
+                    <select type="text" id="select-pedido" name="idpedido" class="form-control col-10 input-pink">
                         <option value="" selected disabled>Selecione...</option>
                     </select>
                     <span class="col-10 offset-2 pl-0 mt-2">Não encontrou? <a href="cadastrar-cliente.html" class="text-pink">Cadastre</a></span>
@@ -38,5 +38,7 @@
 
     <script src="vendor/js/jquery.min.js"></script>
     <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="js/variaveis.js"></script>
+    <script src="js/carregar-select-pedidos.js"></script>
 </body>
 </html>

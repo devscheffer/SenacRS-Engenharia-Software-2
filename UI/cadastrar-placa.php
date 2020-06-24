@@ -20,7 +20,7 @@
     <main class="container mt-5">
         <h4>Novo Pedido</h4>
         <div class="w-75 mx-auto mt-5 row">
-            <form action="cadastrar-placa-confirmar.php" class="mt-5 col-8" method="POST">
+            <form action="cadastrar-placa-confirmar.php" class="mt-5 col-8" method="POST" id="cadastro-placa">
                 <input type="hidden" name="idcliente" value="<?php echo $_POST["idcliente"]; ?>">
                 <fieldset>
                     <div class="row m-0 p-0 justify-content-between">
@@ -67,11 +67,14 @@
             
             <div class="mt-5 col-4">
                 <h5 class="legend">Prévia:</h5>
+                <div id="previa" class="mt-5"></div>
             </div>
         </div>
     </main>
     
     <script src="vendor/js/jquery.min.js"></script>
     <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="js/variaveis.js"></script>
+    <script src="js/desenha-placa.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@ $(document).ready(() => {
 	frase = form.frase.value
 	idCorFrase = form.idcorfrase.value
 	idCorPlaca = form.idcorplaca.value
+	idcliente = form.idcliente.value
 
 	corFrase = coresFrase[idCorFrase]
 	corPlaca = coresPlaca[idCorPlaca]
@@ -22,8 +23,8 @@ $(document).ready(() => {
 	valorMinSinal = (0.5 * valorTotal).toFixed(2)
 
 	$("#descricao-placa").text(resumoPlaca)
-	$("#valor-material").text("R$" + valorMaterial)
-	$("#valor-desenho").text("R$" + valorDesenho)
+	$("#valor-material").text("R$" + valorMaterial.toFixed(2))
+	$("#valor-desenho").text("R$" + valorDesenho.toFixed(2))
 	$("#valor-pedido").text("R$" + valorTotal)
 	$("#valor-min-sinal").text("R$" + valorMinSinal)
 
@@ -32,8 +33,13 @@ $(document).ready(() => {
 		.val(valorMinSinal)
 
 	// CALCULAR DATA ENTREGA:
-	//encontrarDataEntrega($("#data-entrega-sug"), $("#entrega"));
+	dataEntrega($("#data-entrega-sug"), $("#entrega"));
 
+	console.log(wsendpoint + '/api/cliente/' + idcliente)
+	//obter infos do cliente
+	$.get(wsendpoint + '/api/cliente/' + idcliente, (cliente)=>{
+		$('#descricao-cliente').text(`${cliente.idcliente} - ${cliente.nome}`)
+	})
 
 
 });

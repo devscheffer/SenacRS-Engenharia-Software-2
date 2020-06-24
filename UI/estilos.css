@@ -67,3 +67,42 @@ hr{
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+
+#previa{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100px;
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+}
+
+.texto-azul{
+    color: blue;
+}
+
+.texto-vermelho{
+    color: red;
+}
+
+.texto-amarelo{
+    color: yellow;
+}
+
+.texto-preto{
+    color: black;
+}
+
+.texto-verde{
+    color: green;
+}
+
+.placa-branca{
+    background-color: white;
+}
+
+.placa-cinza{
+    background-color: lightgray;
+}
