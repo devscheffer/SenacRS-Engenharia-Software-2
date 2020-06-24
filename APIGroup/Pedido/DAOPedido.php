@@ -45,6 +45,7 @@
 
 
 			$comando->execute();
+			$pedido->idpedido = $pdo->lastInsertId();
 			return $pedido;
 		}
 

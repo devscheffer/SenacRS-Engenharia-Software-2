@@ -14,7 +14,7 @@ class PedidoController {
 	public function insert($request, $response, $args) {
 		$data = $request->getParsedBody();
 		$pedido = new pedido(
-			$data['idpedido']
+			0
 			,$data['idcliente']
 			,$data['dataentrega']
 			,$data['valorservico']
